@@ -26,8 +26,9 @@ The cohort covers a wide range of topics - from **basic concepts** to **advanced
 
 ## 🌐 Useful Links
 
- 🌍 [Website](https://webassam.org) | 📚 [Agenda](https://docs.google.com/spreadsheets/d/1gBegQkezewSqgQFA58BR2RAJO07Sf_4kG2iOI4g9N8M/edit?usp=sharing)
+ 🌍 [Website](https://web3assam.org) | 📚 [Agenda](https://docs.google.com/spreadsheets/d/1gBegQkezewSqgQFA58BR2RAJO07Sf_4kG2iOI4g9N8M/edit?usp=sharing)
 
 ---
 
 ## 💬 More Details Upolading Soon 👀
+
