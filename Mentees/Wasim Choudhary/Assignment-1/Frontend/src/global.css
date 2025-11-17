@@ -1,0 +1,241 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.25);
+  --border: rgba(255, 255, 255, 0.35);
+  --text: #f8fafc;
+  --muted-text: #cbd5e1;
+
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.25);
+  --transition: 0.15s ease;
+
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.15);
+
+  --error: #ef4444;
+  --error-bg: rgba(239, 68, 68, 0.15);
+}
+
+/* Page background */
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  color: var(--text);
+
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 40%,
+    #3b82f6 100%
+  );
+  background-attachment: fixed;
+}
+
+/* Web3 container card */
+.container {
+  max-width: 760px;
+  margin: 3rem auto;
+  padding: 2.2rem 2.6rem;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* heading */
+.container h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  background: linear-gradient(90deg, #bfdbfe, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 800;
+  letter-spacing: 0.8px;
+
+
+  text-shadow: 0 0 10px rgba(59,130,246,0.25);
+
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba(59,130,246,0.8);
+  display: inline-block;
+}
+
+
+/* Labels */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+
+
+  color: #93c5fd;
+
+  
+  text-shadow: 0 0 6px rgba(147,197,253,0.3);
+
+  letter-spacing: 0.4px;
+  font-size: 0.95rem;
+}
+
+
+/* Field spacing */
+.field {
+  margin: 1.2rem 0;
+}
+
+/* Web3 Input Fields */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f172a;
+
+  outline: none;
+  transition: var(--transition);
+}
+
+input:hover {
+  border-color: rgba(255,255,255,0.6);
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59,130,246,0.4);
+}
+
+
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px 18px;
+
+  background: rgba(59, 130, 246, 0.9);
+  color: white;
+
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+button[disabled] {
+  background: rgba(100, 116, 139, 0.5);
+  cursor: not-allowed;
+}
+
+/* Status messages */
+.error {
+  color: var(--error);
+  background: var(--error-bg);
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--error);
+  margin-bottom: 1.2rem;
+}
+
+.success {
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--success);
+  margin-bottom: 1.2rem;
+}
+
+/* Candidate Box (User box) */
+.user-box {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 1.5rem;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Title inside candidate box */
+.user-box-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  
+  color: #364127;
+
+
+  text-shadow: 0 0 10px rgba(96,165,250,0.4);
+
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.6px;
+
+  border-bottom: 2px solid rgba(96,165,250,0.5);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.edit-user-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  color: #1c263e; 
+
+  text-shadow: 0 0 8px rgba(96,165,250,0.35);
+
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+/* Fields inside user box */
+.user-field-label {
+  color: #273344;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 6px rgba(147,197,253,0.3);
+}
+
+.user-field-value {
+  color: #f1f5f9;         
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(255,255,255,0.25);
+ letter-spacing: 0.3px;
+  margin-left: 4px;
+}
+
+
+/* Divider */
+.divider {
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+  margin: 2rem 0;
+}
